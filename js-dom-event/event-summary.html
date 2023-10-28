@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js dom summary</title>
+</head>
+<body>
+    <h1>Final Dom event handlers</h1>
+
+    <!-- changing innerText -->
+    <h3 id="handler-status">Defult text</h3>
+
+    <p id="input-text-display">input text</p>
+    <input id="input-field" type="text">
+    <button id="btn-update">Update</button>
+    <br>
+    <!-- option1 -->
+    <button id="changeText">change defult text</button>
+
+    <!-- option2 -->
+    <button onclick="onclicfunction()">changebyonclick</button>
+
+    <script>
+        // option1
+        document.getElementById('changeText').addEventListener('click',function(){
+            const handlerS = document.getElementById('handler-status');
+            handlerS.innerText = 'change by addEventLisener';
+        })
+
+        //option2
+        function onclicfunction(){
+            const handlstatus = document.getElementById('handler-status');
+            handlstatus.innerText = 'It is change by onclick method';
+        }
+
+        document.getElementById('btn-update').addEventListener('click',function(){
+            const inputField = document.getElementById('input-field');
+            console.log(inputField.value);
+            const p =document.getElementById('input-text-display');
+            p.innerText = inputField.value;
+        })
+
+    </script>
+</body>
+</html>
