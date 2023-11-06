@@ -1,0 +1,4 @@
+https://kanye.rest/
+https://restcountries.com/#endpoints-all
+randomuser.me
+//next practice https://www.themealdb.com/api.php
