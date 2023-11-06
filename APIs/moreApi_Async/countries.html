@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>https://restcountries.com/#endpoints-all</title>
+    <style>
+        #countries-container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            background-color: skyblue;
+            margin: 5px;
+            padding: 5px;
+        }
+        .country{
+            border: 2px solid red;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Countries</h1>
+    </header>
+    <main>
+        <section>
+            <h3>Country Detail</h3>
+            <div id="country-detail">
+
+            </div>
+        </section>
+        <section>
+            <div id="countries-container">
+                
+            </div>
+        </section>
+    </main>
+    <script src="countries.js"></script>
+</body>
+</html>
